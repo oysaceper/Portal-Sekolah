@@ -1,0 +1,98 @@
+@font-face{
+	src: url("../fonts/lato/lato-regular.ttf");
+	font-family: "lato";
+}
+@font-face{
+	src: url("../fonts/raleway/Raleway-Regular.ttf");
+	font-family: "raleway";
+}
+*{
+	box-sizing: border-box;
+}
+h2,
+h4{
+	text-align: center;
+	color: white;
+}
+body{
+	font-family: raleway;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+.transparant{
+	background: rgba(0,0,0,0.6);
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -999999;
+	position: fixed;
+}
+.bungkus{
+	border-radius: 5%;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid white;
+	-webkit-transition: ease-in 0.2s;
+	-moz-transition: ease-in 0.2s;
+	-o-transition: ease-in 0.2s;
+	transition: ease-in 0.2s;
+	animation-name: animation;
+	animation-iteration-count: 1;
+	animation-duration: 1s;
+}
+.bungkus:hover{
+	background: rgba(255,255,255,0.6);
+}
+@keyframes animation{
+	0%	 {margin-left: 80px;}
+}
+.gambar{
+	object-position: center;;
+	object-fit: cover;
+	max-width: 500px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+.gambar:hover{
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.cover{
+	width: 200px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.cover:hover{
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	-o-transform: scale(1.15);
+	transform: scale(1.15);
+}
+footer{
+	text-align: center;
+	font-family: lato;
+	border-top: 2px solid white;
+	padding: 10px 0px 1px 0px;
+	background: #0009;
+}
+.slideshow > .image {
+		position: absolute;
+		left: 0;
+		background-size: cover;	
+	}
